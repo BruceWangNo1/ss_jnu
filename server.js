@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var fs = require('fs');
-var fs = require('util');
+var util = require('util');
 
 var app = express();
 
