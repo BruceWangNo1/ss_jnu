@@ -31,6 +31,6 @@ console.log=function(d){
 	log_stdout.write(util.format(d)+'\n');
 };
 
-app.listen('3000', function(){
-	console.log('SS-PANEL listening on port 3000');
+app.listen('20000', function(){
+	console.log('SS-PANEL listening on port 20000');
 });
