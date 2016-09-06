@@ -1,0 +1,1 @@
+var userclient=angular.module('userclient', []);

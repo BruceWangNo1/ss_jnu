@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:ng="http://angularjs.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_jumbotron.css">
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/signup.css">
+
+
+</head>
+<body id="bootstrap-themes" class="swag-line template-index">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand">SS-JNU</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" ng-controller="signinControllerAuthentication">
+				<ul class="nav navbar-nav navbar">
+		            <li><a href="/#/">Home</a></li>
+		            <li data-ng-show="!authentication.user"><a href="/#/signup">Sign up</a></li>
+					<li data-ng-show="!authentication.user"><a href="/#/signin">Sign in</a></li>
+					<li><a href="/#/about">About</a></li>
+					<li><a href="https://shadowsocks.org/en/download/clients.html" target="_blank">Downloads</a></li>
+		            <li><a href="/#/panel" data-ng-show="authentication.user">Control Panel</a></li>					
+		        </ul>
+				<ul data-ng-show="authentication.user" class="nav navbar-nav navbar-right">
+		            <li class="label label-success"><a id="nameTag" data-ng-bind="authentication.user"></a></li>
+		        </ul>
+				<ul class="nav navbar-nav navbar-right">
+		            <li data-ng-show="authentication.user"><a href="/signout">Log Out</a></li>
+		        </ul>
+			</div>
+
+		</div>
+	</div>
+	<div ng-view id="topRow">
+
+    </div>
+
+	<footer class="footer">
+		<div class="container">
+			<h5 class="text-muted" id="foot1">All Rights Reserved. Copyright © 2015 by Bruce Wang</h5>
+			<h5 class="text-muted" id="foot2">Personal Blog: <a href="http://www.pressureandtime.com" target="_blank">Pressure and Time</a> Contact information: <a href="mailto:brucebaidu@163.com">brucebaidu@163.com</h5>
+		</div>
+	</footer>
+
+	<script type="text/javascript">window.user=<%- user||'null'%>;</script>
+	<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/lib/angular/angular.js"></script>
+	<script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="/lib/angular-resource/angular-resource.min.js"></script>
+	
+	<script type="text/javascript" src="/information/information.client.module.js"></script>
+	<script type="text/javascript" src="/information/controllers/information.client.controller.js"></script>
+	<script type="text/javascript" src="/information/config/information.client.route.js"></script>
+
+	<script type="text/javascript" src="/signup/signup.client.module.js"></script>
+	<script type="text/javascript" src="/signup/controllers/signup.client.controller.js"></script>
+	<script type="text/javascript" src="/signup/config/signup.client.route.js"></script>
+
+	<script type="text/javascript" src="/home/home.client.module.js"></script>
+	<script type="text/javascript" src="/home/controllers/home.client.controller.js"></script>
+	<script type="text/javascript" src="/home/config/home.client.route.js"></script>
+
+	<script type="text/javascript" src="/signin/signin.client.module.js"></script>
+	<script type="text/javascript" src="/signin/controllers/signin.client.controller.js"></script>
+	<script type="text/javascript" src="/signin/config/signin.client.route.js"></script>
+
+	<script type="text/javascript" src="/user/user.client.module.js"></script>
+	<script type="text/javascript" src="/user/services/authentication.client.service.js"></script>
+
+	<script type="text/javascript" src="/panel/panel.client.module.js"></script>
+	<script type="text/javascript" src="/panel/controllers/panel.client.controller.js"></script>
+	<script type="text/javascript" src="/panel/config/panel.client.route.js"></script>
+	
+	<script type="text/javascript" src="/reset_password/reset_password.client.module.js"></script>
+	<script type="text/javascript" src="/reset_password/controllers/reset_password.client.controller.js"></script>
+	<script type="text/javascript" src="/reset_password/config/reset_password.client.route.js"></script>
+
+	<script type="text/javascript" src="/application.js"></script>
+</body>
+
+</html>
+
+
+
+
+

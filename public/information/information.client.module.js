@@ -1,0 +1,1 @@
+var information=angular.module('information',[]);

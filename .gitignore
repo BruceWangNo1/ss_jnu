@@ -1,0 +1,5 @@
+node_modules
+public/lib
+debug.log
+config/credentials/credentials.js
+
