@@ -7,6 +7,12 @@
   font-size: 90%;
 }
 
+.os_image {
+  width: 96px;
+  height: 96px;
+  /*margin-top: 20px;*/
+}
+
 .backgroundImage {
   background-image:url("background.jpg");
   width:100%;
@@ -25,6 +31,13 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+.btn-outline {
+    color: #563d7c;
+    background-color: transparent;
+    border-color: #563d7c;
+}
+
 /*
 .footer {
   position: absolute;

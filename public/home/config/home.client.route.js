@@ -5,5 +5,8 @@ home.config(['$routeProvider', function($routeProvider){
 	}).
 	when('/about', {
 		templateUrl:'home/views/about.client.view.html'
+	}).
+	when('/help', {
+		templateUrl: 'home/views/help.client.view.html'
 	});
 }]);

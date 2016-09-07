@@ -1,0 +1,161 @@
+<div class="bs-docs-header">
+ <div class=container>
+    <h1>Getting help</h1>
+    <p>A detailed instruction manual.</p>
+ </div>
+</div>
+<div class="container bs-docs-container " ng-controller="helpController"> 
+	<div class=row> 
+		<div class=col-md-9 role=main> 
+			<div class=bs-docs-section> 
+				<h1 class=page-header id='download'>Download</h1>
+				<p class=lead>To start to use our service, the first thing you need to do is to download the client software suitable for you.</p>
+				<div class="row bs-downloads"> 
+					<div class="col-sm-4"> 
+						<div>
+							<img src="https://www.docker.com/sites/default/files/docker-icons-mac-1-2X.png" alt="MAC">
+						</div>
+						<button class="btn btn-lg btn-outline"> <a href="/download/ShadowsocksX-2.6.3.dmg" >Mac Download</a></button>
+					</div>
+					<div class="col-sm-4"> 
+						<div>
+							<img src="https://www.docker.com/sites/default/files/docker-icons-windows-1-2X.png" alt="WINDOWS">
+						</div>
+						<button class="btn btn-lg btn-outline"> <a href="/download/Shadowsocks.exe" >Windows Download</a></button>
+					</div>
+					<div class="col-sm-4"> 
+						<div>
+							<img src="https://www.docker.com/sites/default/files/docker-icons-linux-1-2X.png" alt="LINUX">
+						</div>
+						<button class="btn btn-lg btn-outline">Ubuntu Terminal Install</button>
+						<pre><code>sudo add-apt-repository ppa:hzwhuang/ss-qt5
+sudo apt-get update
+sudo apt-get install shadowsocks-qt5
+	</code></pre>
+					</div>
+					<div class="col-sm-4"> 
+						<div>
+							<img src="https://www.docker.com/sites/default/files/docker-icons-mac-1-2X.png" alt="iPhone">
+						</div>
+						<button class="btn btn-lg btn-outline"> <a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8" >App Store</a></button>
+					</div>
+					
+					<div class="col-sm-4"> 
+						<div>
+							<img class="os_image" src="http://carecontrolsystems.co.uk/wp-content/uploads/2016/05/ico-an.png">
+						</div>
+						<button class="btn btn-lg btn-outline"> <a href="/download/shadowsocks-nightly-3.0.8.apk" >Android Download</a></button>
+					</div>
+				</div>
+			</div>
+			<div class=bs-docs-section > 
+				<h1 class=page-header id='mac_configuration'>Mac Configuration</h1>
+				<ol>
+					<li><p>Install and open the software.</p></li>
+					<li>
+						<p>Click the paper plane sign on the menu bar.</p>
+						<p><img src="/mac_configuration/mac_01.png" style="width:300px"></p>
+					</li>
+					<li>
+						<p>Go to 'Servers' -> 'Open Server Preferences'.</p>
+						<p><img src="/mac_configuration/mac_02.png" style="width:300px"></p>
+					</li>
+					<li>
+						<p>Click '+' sign and start to add configuration information.</p>
+						<p><img src="/mac_configuration/mac_03.png" style="width:300px"></p>
+					</li>
+					<li>
+						<p>'Address' is in 'Control Panel' -> 'Node List' -> 'IP' from SS-JNU. Immediately follows 'Address' is the port number which can be found at 'Control Panel' -> 'Configuration Information'. There would not be any problem for the following two blanks and you can leave 'Remark' blank. Click 'OK' to finish.</p>
+						<p><img src="/mac_configuration/mac_04.png" style="width:300px"></p>
+					</li>
+					<li>
+						<p>Click the paper plane on the menu bar. Click 'Global Mode' if you want all your traffic to go through shadowsocks and 'Auto Proxy Mode' (which is prefered) if you only want certain blocked traffic to go through shadowsocks. Then click 'Turn Shadowsocks On'.</p>
+						<p>
+							<img src="/mac_configuration/mac_05.png" style="width:300px">
+						</p>
+					</li>
+					<li>
+						<p>Open your Safari and start to enjoy the free Internet.</p>
+						<p><img src="/mac_configuration/mac_06.png" style="width:500px"></p>
+					</li>	
+				</ol>
+				<h2>Note: Close shadowsocks when you are not using services like Google or Youtube to have better bandwidth.</h2>
+				<h1 class=page-header id='windows_configuration'>Windows Configuration</h1>
+				<ol>
+					<li>
+						<p>Most of the configuration steps follows Mac.</p>
+					</li>
+					<li>
+						<p>If you think you have configured shadowsocks correctly but you cannot open google, you may need to configure you web brower. Here is an instruction for Chrome or 360 Safe Browser.</p>
+						<ol>
+							<li>
+								<p>Download <a href="/download/SwitchyOmega.crx">SwitchyOmega</a></p>
+							</li>
+							<li>
+								<p>Drag the SwitchyOmega copy you downloaded to your Chrome browser and install it.</p>
+							</li>
+							<li>
+								<p>Click the SwithyOmega sign on Chrome's menu bar and click 'Options'.</p>
+								<p>
+									<img src="/switchyOmega_configuration/so_01.png" style="width:300px">
+								</p>
+							</li>
+							<li>
+								<p>Click 'New Profile'.</p>
+								<p>
+									<img src="/switchyOmega_configuration/so_02.png" style="width:300px">
+								</p>
+							</li>
+							<li>
+								<p>Configure the new profile following the example in the picture.</p>
+								<p>
+									<img src="/switchyOmega_configuration/so_03.png" style="width:300px">
+								</p>
+								<p>
+									<img src="/switchyOmega_configuration/so_04.png" style="width:600px">
+								</p>
+							</li>
+							<li>
+								<p>Click 'Apply changes'</p>
+								<p>
+									<img src="/switchyOmega_configuration/so_05.png" style="width:300px">
+								</p>
+							</li>
+							<li>
+								<p>Click 'ss_jnu_socks5' to use the proxy.</p>
+								<p>
+									<img src="/switchyOmega_configuration/so_06.png" style="width:300px">
+								</p>
+							</li>
+							<li>
+								<p>Enjoy the free Internet!</p>
+							</li>
+						</ol>
+						<li>
+							<p>Choose 'System Proxy' rather than 'ss_jnu_socks5' and shadowsocks when you are not using services like Google or Youtube to have better bandwidth.</p>
+						</li>
+					</li>
+				</ol>
+				<h1 class=page-header id='iphone_configuration'>iPhone Configuration</h1>
+				<p>Most of the configuration steps follows Mac.</p>
+				<p>
+					<img src="/iphone_configuration/1.png" style="width:300px">
+				</p>
+				<h1 class=page-header id='android_configuration'>Android Configuration</h1>
+				<p>Most of the configuration steps follows Mac.</p>
+
+			</div>
+		</div>
+		<div class="col-md-3" role=complementary>
+			<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs"> 
+				<ul class="nav bs-docs-sidenav"> 
+					<li> <a ng-click="scrollTo('download')">Download</a> </li> 
+					<li> <a ng-click="scrollTo('mac_configuration')">Mac Configuration</a> </li> 
+					<li> <a ng-click="scrollTo('windows_configuration')">Windows Configuration</a></li>
+					<li> <a ng-click="scrollTo('iphone_configuration')">iPhone Configuration</a> </li> 
+					<li> <a ng-click="scrollTo('android_configuration')">Android Configuration</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
